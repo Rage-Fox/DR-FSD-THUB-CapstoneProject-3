@@ -9,7 +9,7 @@ export default class Product extends Component {
         const {id, title, img, price, inCart} = this.props.product;
         return (
             <ProducrWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
-               <div className="card">
+                <div className="card">
                 <ProductConsumer>
                         {value => (<div className="img-container p-5" onClick={() => value.handleDetail(id)}>
                             <Link to="/details">
@@ -82,7 +82,7 @@ const ProducrWrapper =styled.div`
     bottom:0;
     right:0;
     padding:0.2rem 0.4rem;
-    background:var(--lightBlue);
+    background:var(--green);
     color:var(--mainWhite);
     font-size:1.4rem;
     border-radius:0.5 rem 0 0 0;
